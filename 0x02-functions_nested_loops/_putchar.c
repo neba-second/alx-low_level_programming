@@ -2,11 +2,11 @@
 /**
  * _putchar - Prints putchar followed by new line
  *
- * Return: int 0
+ * Return: no return
  *
  */
-int _putchar(void)
+void _putchar(void)
 {
 	printf("_putchar\n");
-	return (0);
+	return;
 }
