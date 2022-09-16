@@ -19,7 +19,6 @@ int _isdigit(int c)
 		else
 		{
 			i++;
-			continue;
 		}
 	}
 	return (0);
