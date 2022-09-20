@@ -9,10 +9,10 @@
 void print_rev(char *s)
 {
 	int count = 0;
-	int i = 0;
+	int i;
 
 	/* first get the length of the string*/
-	while (*s != '\0')
+	while (*s)
 	{
 		count++;
 		s++;
