@@ -8,10 +8,8 @@
  */
 void print_rev(char *s)
 {
-	int i;
-	char str;
-
 	int count = 0;
+	int i;
 
 	/* first get the length of the string*/
 	while (*s != '\0')
@@ -21,8 +19,7 @@ void print_rev(char *s)
 	}
 	for (i = count; i >= 0; i--)
 	{
-		str = s[i];
-		_putchar(str);
+		_putchar(*s--);
 	}
 	_putchar('\n');
 }
