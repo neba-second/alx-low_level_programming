@@ -12,7 +12,7 @@ int main(__attribute__((unused)) int argc,
 {
 	int num1, num2, product;
 
-	if (argc < 2)
+	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
