@@ -31,12 +31,12 @@ int _strlen(char *s)
 char *_strncat(char *dest, char *src, int n)
 {
 	int len1 = _strlen(dest);
-	/*int len2 = _strlen(src);*/
+	char *ptr = dest;
 	int i;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		dest[len1 + i] = src[i];
 	}
-	return (dest);
+	return (ptr);
 }
