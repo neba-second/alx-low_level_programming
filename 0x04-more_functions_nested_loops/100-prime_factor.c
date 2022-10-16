@@ -1,25 +1,32 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * print_prime - prints prime factors of a number
- * @i: the number to be factorized
- * Return: no return
+ *main - largest prime facter of 612852475143.
+ *
+ *Return: 0
  */
-void print_prime(long int i)
+int main(void)
 {
-	int j = 2;
+	long int x, i, pf;
 
-	while (i)
+	pf = -1;
+	x = 612852475143;
+
+	while (x % 2 == 0)
 	{
-		if (i % j == 0)
+		pf = 2;
+		x = x / 2;
+	}
+	for (i = 3; i <= x / 2; i = i + 2)
+	{
+		while (x % i == 0)
 		{
-			_putchar(j + ' ');
-			_putchar(',');
-			_putchar(' ');
-		}
-		else
-		{
-			j++;
+			pf = i;
+			x = x / i;
 		}
 	}
+	if (x > 2)
+		pf = x;
+
+	printf("%ld\n", pf);
+	return (0);
 }
